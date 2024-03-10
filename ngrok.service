@@ -1,0 +1,12 @@
+[Unit]
+Description=ngrok startup
+After=network.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=~/ngrok_startup.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
